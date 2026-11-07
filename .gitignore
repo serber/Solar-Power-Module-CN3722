@@ -1,0 +1,4 @@
+*.step
+.DS_Store
+.vscode/
+backups/
