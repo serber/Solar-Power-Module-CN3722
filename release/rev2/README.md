@@ -1,6 +1,6 @@
 # Release rev2
 
-Prototype release, exported from EasyEDA Pro 3.2.209 on 2026-11-07. **Not validated and not ordered.** It has not been built or measured.
+Prototype release, exported from EasyEDA Pro 3.2.209 on 2026-11-07. `bom-rev2.csv` was exported again on 2026-11-08 after the passive parts were moved to Samsung and Yageo; the Gerber and placement files were not changed by that. **Not validated and not ordered.** It has not been built or measured.
 
 | File | Content |
 |---|---|

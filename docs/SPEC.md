@@ -26,6 +26,24 @@ The board is one layout. The values below select the build.
 | LiFePO4 2S, default | 7.2 V | 101 kΩ | 200 kΩ | 4.7 pF |
 | LiFePO4 3S | 10.8 V | 48.7 kΩ | 169 kΩ | 3.3 pF |
 
+Parts in the board's series (Yageo `RT0805BRD07` 0.1 %, Samsung `CL21C` C0G 50 V), found in the EasyEDA library:
+
+| Value | MPN | LCSC |
+|---|---|---|
+| 23.7 kΩ | `RT0805BRD0723K7L` | C309659 |
+| 36 kΩ | `RT0805BRD0736KL` | C865432 |
+| 48.7 kΩ | Not found in this series | — |
+| 101 kΩ | `RT0805BRD07101KL` | C7302896 |
+| 120 kΩ | `RT0805BRD07120KL` | C865161 |
+| 169 kΩ | `RT0805BRD07169KL` | C706218 |
+| 200 kΩ | `RT0805BRD07200KL` | C728645 |
+| 205 kΩ | Not found in this series | — |
+| 2.2 pF | Not found in this series | — |
+| 3.3 pF | `CL21C3R3CBANNNC` | C170106 |
+| 4.7 pF | `CL21C4R7CBANNNC` | C85304 |
+| 12 pF | `CL21C120JBANNNC` | C170110 |
+| 18 pF | `CL21C180JBANNNC` | C170109 |
+
 The table comes from the original design, except the default pair. Use 0.1% resistors. With 1% resistors and the CN3722 FB tolerance, a 4.2 V build can reach 4.29 V. Even with 0.1% parts the worst case is about 4.26 V, so measure each board. `R16` lowers the voltage if needed.
 
 ### Charge current
@@ -56,7 +74,8 @@ The external sensor is the default because only it measures the battery. With no
 |---|---|
 | `C1`, `C11` | SMD or through-hole, 3.5 mm pitch. Fit one |
 | `R15` | 20 kΩ across the input, if diode leakage disturbs sleep mode |
-| `R14` | 0 Ω by default. Use 4.7–10 Ω if the gate rings |
+| `R14` | 0 Ω by default (`RC0805JR-070RL`). Use 4.7–10 Ω if the gate rings: `RC0805FR-074R7L` (C137513) or `RC0805FR-0710RL` (C96347) |
+| `R2` as a resistor | 10 kΩ, `RC0805FR-0710KL` (C84376) |
 
 ## 3. Differences from the original
 
@@ -67,7 +86,8 @@ The external sensor is the default because only it measures the battery. With no
 | Panel reverse protection | None | `T2`, `D6`, `R13` |
 | Input surge protection | None | `D7`, SMBJ24A |
 | `T1` | SI4435 | AO4419 |
-| `C6` | Tantalum, 6032 | 10 µF 25 V X7R, 1210 |
+| `C6` | Tantalum, 6032 | 10 µF 50 V X7R, 1210 |
+| Passive parts | Mixed manufacturers | All ceramics Samsung CL, all chip resistors Yageo |
 | `F1` | 1812 | 2920 |
 | `R1`, `R5` | 2.7 kΩ | 6.8 kΩ, for 28 V at 0805 |
 | Input bypass | `C8` only | `C8`, plus `C9`, `C10` at the switch |

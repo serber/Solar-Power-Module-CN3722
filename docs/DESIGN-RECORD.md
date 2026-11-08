@@ -15,6 +15,7 @@ All decisions are dated 2026-11-07.
 | 7 Routing | Approved, mode A, block gates kept | Use copper on both layers |
 | 8 Verification | Accepted | Repository structure to follow `serber/tiny-gps-logger` |
 | 9 Delivery | Approved | README must list every difference from the original and the reason. Reviewer added the author credit on the bottom silkscreen, release exported again |
+| Passive unification, 2026-11-08 | Approved | Ceramics to Samsung CL, chip resistors to Yageo RC/RT, same values, ratings and footprints. `C6` 25 → 50 V. Only part attributes changed in the schematic; PCB updated from it, footprints and positions unchanged (CAD check, placement export compared), DRC 0 errors. BOM exported again |
 
 ## Tool inventory
 

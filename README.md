@@ -63,7 +63,7 @@ The core circuit is unchanged: CN3722, loop compensation, the MPPT divider with 
 |---|---|---|---|
 | `R6`, `R7`, `C7` | 48.7 kΩ, 36 kΩ, 12 pF, LiIon 1S | 101 kΩ, 200 kΩ, 4.7 pF, LiFePO4 2S | Different default build, and 0.1% resistors for accuracy. The author's table still applies, with new default values |
 | `R1`, `R5` | 2.7 kΩ | 6.8 kΩ | 2.7 kΩ dissipates 0.25 W at 28 V, above the 0805 rating |
-| `C6` | 10 µF tantalum | 10 µF 25 V X7R ceramic | A ceramic part is not damaged by reverse voltage, and the data sheet suggests it |
+| `C6` | 10 µF tantalum | 10 µF 50 V X7R ceramic | A ceramic part is not damaged by reverse voltage, and the data sheet suggests it. 50 V matches the other ceramics |
 | `T1` | SI4435 | AO4419 | Kept from the first V2 of this board. Also 30 V, in the same package |
 | `F1` | 1.1 A, 1812 | 1.5 A, 2920 | More margin at 1 A, and one footprint covers every charge current up to 3 A |
 | `K2` | JST XH | Screw terminal | Same connector type for panel, battery and load |
