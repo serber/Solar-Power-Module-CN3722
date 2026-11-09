@@ -1,10 +1,8 @@
 # BOM, rev2
 
-Parts fitted on the default build, grouped by part type. Generated from `bom-rev2.csv`, the EasyEDA export.
+Fitted parts, grouped by type. Source: `bom-rev2.csv`, the EasyEDA export. 32 lines, 42 parts per board.
 
-37 lines, 42 parts per board. Default build: LiFePO4 2S (7.21 V), 1 A, external NTC. Other builds are in [`docs/SPEC.md`](../../docs/SPEC.md#build-options).
-
-## Integrated circuits
+## Integrated circuits and modules
 
 | Refs | Qty | Value | Part | Manufacturer | Package | LCSC |
 |---|---|---|---|---|---|---|
@@ -14,16 +12,15 @@ Parts fitted on the default build, grouped by part type. Generated from `bom-rev
 
 | Refs | Qty | Value | Part | Manufacturer | Package | LCSC |
 |---|---|---|---|---|---|---|
-| T1 | 1 | P-MOSFET, buck switch | `AO4419-JSM` | JSMSEMI | SOP-8 | [C18189860](https://www.lcsc.com/product-detail/C18189860.html) |
-| T2 | 1 | P-MOSFET, input reverse protection | `AO4419-JSM` | JSMSEMI | SOP-8 | [C18189860](https://www.lcsc.com/product-detail/C18189860.html) |
-| T3 | 1 | N-MOSFET, battery reverse protection | `AO3416A-HXY` | HXY | SOT-23 | [C19631196](https://www.lcsc.com/product-detail/C19631196.html) |
+| T1, T2 | 2 | P-MOSFET: buck switch, input reverse protection | `AO4419-JSM` | JSMSEMI | SOP-8 | [C18189860](https://www.lcsc.com/product-detail/C18189860.html) |
+| T3 | 1 | N-MOSFET: battery reverse protection | `AO3416A-HXY` | HXY | SOT-23 | [C19631196](https://www.lcsc.com/product-detail/C19631196.html) |
 
 ## Diodes and LEDs
 
 | Refs | Qty | Value | Part | Manufacturer | Package | LCSC |
 |---|---|---|---|---|---|---|
-| D1, D2 | 2 | MB ΩS340 | `MBRS340` | onsemi | SMC | [C117937](https://www.lcsc.com/product-detail/C117937.html) |
-| D3 | 1 | Green LED | `NCD0805G1` | 国星光电 | 0805 | [C84260](https://www.lcsc.com/product-detail/C84260.html) |
+| D1, D2 | 2 | MBRS340 | `MBRS340` | onsemi | SMC | [C117937](https://www.lcsc.com/product-detail/C117937.html) |
+| D3 | 1 | Green LED | `NCD0805G1` | NATIONSTAR | 0805 | [C84260](https://www.lcsc.com/product-detail/C84260.html) |
 | D4 | 1 | Red LED | `17-21SURC/S530-A3/TR8` | EVERLIGHT | 0805 | [C72037](https://www.lcsc.com/product-detail/C72037.html) |
 | D5 | 1 | BAT54 | `LBAT54HT1G` | LRC | SOD-323 | [C12744](https://www.lcsc.com/product-detail/C12744.html) |
 | D6 | 1 | 12 V zener | `BZT52C12S` | FMS | SOD-323 | [C213232](https://www.lcsc.com/product-detail/C213232.html) |
@@ -51,14 +48,12 @@ Parts fitted on the default build, grouped by part type. Generated from `bom-rev
 | R4 | 1 | 120 Ω 1% | `RC0805FR-07120RL` | YAGEO | 0805 | [C114245](https://www.lcsc.com/product-detail/C114245.html) |
 | R6 | 1 | 101 kΩ 0.1% | `RT0805BRD07101KL` | YAGEO | 0805 | [C7302896](https://www.lcsc.com/product-detail/C7302896.html) |
 | R7 | 1 | 200 kΩ 0.1% | `RT0805BRD07200KL` | YAGEO | 0805 | [C728645](https://www.lcsc.com/product-detail/C728645.html) |
-| R8 | 1 | 100 kΩ 1% | `RC0805FR-07100KL` | YAGEO | 0805 | [C96346](https://www.lcsc.com/product-detail/C96346.html) |
-| R9 | 1 | 1 MΩ 1% | `RC0805FR-071ML` | YAGEO | 0805 | [C107700](https://www.lcsc.com/product-detail/C107700.html) |
+| R8, R13 | 2 | 100 kΩ 1% | `RC0805FR-07100KL` | YAGEO | 0805 | [C96346](https://www.lcsc.com/product-detail/C96346.html) |
+| R9, R17 | 2 | 1 MΩ 1% | `RC0805FR-071ML` | YAGEO | 0805 | [C107700](https://www.lcsc.com/product-detail/C107700.html) |
 | R10 | 1 | 200 mΩ 1% 1.5 W | `HoLR2512-1.5W-200mR-1%-15ppm` | Milliohm | 2512 | [C2885425](https://www.lcsc.com/product-detail/C2885425.html) |
 | R11 | 1 | 10 kΩ | `3296W-1-103LF` | BOURNS | 3296W / 64W, 2.54 mm inline | [C34846](https://www.lcsc.com/product-detail/C34846.html) |
 | R12 | 1 | 200 Ω 1% | `RC0805FR-07200RL` | YAGEO | 0805 | [C114567](https://www.lcsc.com/product-detail/C114567.html) |
-| R13 | 1 | 100 kΩ 1% | `RC0805FR-07100KL` | YAGEO | 0805 | [C96346](https://www.lcsc.com/product-detail/C96346.html) |
 | R14 | 1 | 0 Ω | `RC0805JR-070RL` | YAGEO | 0805 | [C96345](https://www.lcsc.com/product-detail/C96345.html) |
-| R17 | 1 | 1 MΩ 1% | `RC0805FR-071ML` | YAGEO | 0805 | [C107700](https://www.lcsc.com/product-detail/C107700.html) |
 
 ## Inductors
 
@@ -72,42 +67,38 @@ Parts fitted on the default build, grouped by part type. Generated from `bom-rev
 |---|---|---|---|---|---|---|
 | F1 | 1 | 1.5 A hold, 33 V | `2920L150DR` | Littelfuse | 2920 | [C93688](https://www.lcsc.com/product-detail/C93688.html) |
 
-## Connectors
+## Connectors and mechanics
 
 | Refs | Qty | Value | Part | Manufacturer | Package | LCSC |
 |---|---|---|---|---|---|---|
-| K1 | 1 | Solar input | `DG301-5.0-02P-12-00A(H)` | DEGSON | Screw terminal 5.0 mm, 2P | [C5371917](https://www.lcsc.com/product-detail/C5371917.html) |
-| K2 | 1 | Battery | `DG301-5.0-02P-12-00A(H)` | DEGSON | Screw terminal 5.0 mm, 2P | [C5371917](https://www.lcsc.com/product-detail/C5371917.html) |
-| K3 | 1 | Load output | `DG301-5.0-02P-12-00A(H)` | DEGSON | Screw terminal 5.0 mm, 2P | [C5371917](https://www.lcsc.com/product-detail/C5371917.html) |
-| K4 | 1 | NTC | `B2B-PH-K-S(LF)(SN)` | JST | JST PH 2.0 mm, 2P | [C131337](https://www.lcsc.com/product-detail/C131337.html) |
-
-All parts are on the top side.
+| K1, K2, K3 | 3 | Screw terminal: panel, battery, load | `DG301-5.0-02P-12-00A(H)` | DEGSON | Screw terminal 5.0 mm, 2P | [C5371917](https://www.lcsc.com/product-detail/C5371917.html) |
+| K4 | 1 | External NTC | `B2B-PH-K-S(LF)(SN)` | JST | JST PH 2.0 mm, 2P | [C131337](https://www.lcsc.com/product-detail/C131337.html) |
 
 ## Do not fit
 
-| Refs | Purpose |
+| Refs | Note |
 |---|---|
-| `C11` | Through-hole alternative to `C1`, 3.5 mm pitch, 8 mm diameter. Fit one of the two. |
-| `R2` | On-board NTC, `NCP18XH103F03RB`, [C13564](https://www.lcsc.com/product-detail/C13564.html). Fit with `R12` = 0 Ω and without `D5` and `K4`, or as 10 kΩ with no sensor. |
-| `R15` | 20 kΩ across `C1`, from the CN3722 data sheet, for diode leakage. `RC0805FR-0720KL`, [C114566](https://www.lcsc.com/product-detail/C114566.html). |
-| `R16` | Parallel trim for `R7`, to lower the charge voltage. Value chosen on the board; use the Yageo `RC0805FR-07` series. |
-| `TP1`, `TP2`, `TP3` | Test pads, no part to fit. `TP1` feeds the FOCV tracker add-on. |
+| C11 | Through-hole alternative to `C1`, 3.5 mm pitch, 8 mm. Fit one of the two |
+| R2 | On-board NTC `NCP18XH103F03RB` ([C13564](https://www.lcsc.com/product-detail/C13564.html)) with `R12` = 0 Ω and no `D5`, `K4`; or 10 kΩ for no sensor |
+| R15 | 20 kΩ across `C1` if diode leakage disturbs sleep mode: `RC0805FR-0720KL` ([C114566](https://www.lcsc.com/product-detail/C114566.html)) |
+| R16 | Parallel trim for `R7`, value chosen on the board, `RC0805FR-07` series |
+| TP1, TP2, TP3 | Test pads. `TP1` feeds the FOCV tracker |
 
-They are in the placement file, so remove them if a fabricator assembles the board.
+They are in the placement file: remove them if a fabricator assembles the board.
 
 ## Not on the BOM
 
 | Item | Qty | Note |
 |---|---|---|
-| External 10 kΩ NTC with JST PH 2.0 plug | 1 | Connects to `K4`. Without a sensor or `R2`, charging does not start. |
-| Battery with BMS | 1 | Connects to `K2`. |
-| Solar panel, Voc below 26 V at the coldest temperature | 1 | Connects to `K1`. |
+| 10 kΩ NTC with JST PH 2.0 plug | 1 | To `K4`. Without a sensor or `R2`, charging does not start |
+| Battery with BMS | 1 | To `K2` |
+| Solar panel, Voc below 26 V at the coldest temperature | 1 | To `K1` |
 
-## Substitutions
+## Notes
 
-- `R11`: `3296W-1-103LF` replaces the author's Vishay `64W-10K`. Check the pinout against the footprint before ordering.
-- `R6`, `R7`: 162 kΩ 0.1% was not in the library, so 101 kΩ and 200 kΩ give 7.21 V instead of 7.20 V.
-- `T1`, `T2`, `T3` are second-source parts. Their data sheets were not checked.
-- Ceramic capacitors are all Samsung CL, chip resistors are all Yageo (RC for 1 % and 0 Ω, RT for 0.1 %). Changed on 2026-11-08 from mixed YAGEO, FH and UNI-ROYAL parts with the same values, footprints and ratings. `C6` moved from 25 V to 50 V. All the new parts are JLCPCB Extended parts; the replaced UNI-ROYAL resistors were Basic.
-
-Stock and prices were not checked. Links were built from the LCSC codes and were not opened.
+- Default build: LiFePO4 2S (7.21 V), 1 A, external NTC. Other builds change `R6`, `R7`, `C7`, `R10`, `L1`, `F1`: see [`docs/SPEC.md`](../../docs/SPEC.md#2-build-options).
+- All parts are on the top side.
+- `R11` `3296W-1-103LF` replaces the original Vishay `64W-10K`; check its pinout against the footprint.
+- `R6`, `R7`: 162 kΩ 0.1% is not in the library, so 101 kΩ and 200 kΩ give 7.21 V instead of 7.20 V.
+- `T1`–`T3` are second-source parts; their data sheets were not checked.
+- Stock and prices were not checked.

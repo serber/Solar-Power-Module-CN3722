@@ -79,20 +79,7 @@ The external sensor is the default because only it measures the battery. With no
 
 ## 3. Differences from the original
 
-| Item | Original | This board |
-|---|---|---|
-| Size | 60 × 34 mm | 64 × 42 mm |
-| Battery connector | JST XH, keyed | Screw terminal, with reverse protection on `T3` |
-| Panel reverse protection | None | `T2`, `D6`, `R13` |
-| Input surge protection | None | `D7`, SMBJ24A |
-| `T1` | SI4435 | AO4419 |
-| `C6` | Tantalum, 6032 | 10 µF 50 V X7R, 1210 |
-| Passive parts | Mixed manufacturers | All ceramics Samsung CL, all chip resistors Yageo |
-| `F1` | 1812 | 2920 |
-| `R1`, `R5` | 2.7 kΩ | 6.8 kΩ, for 28 V at 0805 |
-| Input bypass | `C8` only | `C8`, plus `C9`, `C10` at the switch |
-| Gate resistor | None | `R14` |
-| Test points | `TP1` | `TP1`, `TP2`, `TP3` |
+See the [README](../README.md#differences-from-the-original).
 
 ## 4. Input limit
 

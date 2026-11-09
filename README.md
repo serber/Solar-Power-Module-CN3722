@@ -4,32 +4,32 @@ A solar MPPT charge controller for LiIon and LiFePO4 batteries, built around the
 
 ![Board, top side](docs/images/board-top.png)
 
-*Render of the 3D model, green solder mask, not a photo. `R11` has no 3D model, so only its pads are shown. `C11`, `R2`, `R15` and `R16` are not fitted.*
-
-- 64 × 42 mm, 2-layer board
-- LiIon or LiFePO4, 1S to 3S, set with `R6`, `R7` and `C7`
-- Charge current from 1 A to 3 A, set with `R10`, with matching `L1` and `F1`
-- MPPT voltage from 8.5 V to 27 V, set with trimmer `R11`
-- Battery temperature monitoring: external NTC, on-board NTC or none
-- Reverse polarity protection on the panel and battery inputs
-- Screw terminals for panel, battery and load
-- `TP1` and `R11` keep the board compatible with the author's [FOCV tracker](https://www.maltepoeggel.de/?site=solar-mppt-focv&lang=en)
+*Render, not a photo. `R11` has no 3D model. `C11`, `R2`, `R15` and `R16` are not fitted.*
 
 ## Status
 
 | Part | State |
 |---|---|
-| PCB | Designed in EasyEDA Pro, not yet manufactured |
-| Validation | Calculated and checked in CAD only. Nothing has been measured |
+| PCB | rev2, EasyEDA Pro, DRC 0 errors. Not manufactured |
+| Validation | Calculated and checked in CAD only. Nothing measured |
 
-DRC reports 0 errors. Open items are in the [design record](docs/DESIGN-RECORD.md#open-items-before-ordering).
+Open items: [design record](docs/DESIGN-RECORD.md#open-items-before-ordering).
 
-![Board, bottom side](docs/images/board-bottom.png)
+## Features
+
+- LiIon or LiFePO4, 1S to 3S, set with `R6`, `R7` and `C7`
+- Charge current 1–3 A, set with `R10`, with matching `L1` and `F1`
+- MPPT voltage 8.5–27 V, set with trimmer `R11`
+- Battery temperature: external NTC, on-board NTC or none
+- Reverse polarity protection on the panel and battery inputs
+- Screw terminals for panel, battery and load
+- `TP1` and `R11` keep it compatible with the author's [FOCV tracker](https://www.maltepoeggel.de/?site=solar-mppt-focv&lang=en)
 
 ## Specifications
 
 | Parameter | Value |
 |---|---|
+| Board | 64 × 42 mm, 2 layers, 1.6 mm |
 | Input | 8.5 V to 26 V. Panel Voc must stay below 26 V at the coldest temperature |
 | Battery | LiIon or LiFePO4, 1S to 3S, with a BMS |
 | Charge current | 1 A, 2 A or 3 A by build |
@@ -37,7 +37,9 @@ DRC reports 0 errors. Open items are in the [design record](docs/DESIGN-RECORD.m
 | Default build | LiFePO4 2S, 7.21 V, 1 A, external NTC |
 | Temperature window | About 0 °C to 50 °C with a 10 kΩ NTC |
 
-Values for each chemistry, current and NTC mode are in [`docs/SPEC.md`](docs/SPEC.md#build-options).
+Values for each chemistry, current and NTC mode: [`docs/SPEC.md`](docs/SPEC.md#2-build-options).
+
+![Board, bottom side](docs/images/board-bottom.png)
 
 ## Differences from the original
 
@@ -91,7 +93,7 @@ With the board powered from a bench supply and no battery, set the supply to the
 
 ## Ordering
 
-Files are in [`release/rev2`](release/rev2). Upload `gerber-rev2.zip` and send this instruction:
+Upload [`release/rev2/gerber-rev2.zip`](release/rev2) and send:
 
 ```text
 5PCS, 2 LAYERS, FR4, 1.6MM, OUTER 1OZ, Green Soldermask, White Legend, ENIG, TENTED VIAS, order number will be added
@@ -111,11 +113,12 @@ See [`release/rev2/BOM.md`](release/rev2/BOM.md).
 
 | Path | Content |
 |---|---|
-| [`release/rev2`](release/rev2) | Gerbers, BOM and placement for ordering |
-| [`docs/SPEC.md`](docs/SPEC.md) | PCB specification and build options |
-| [`docs/DESIGN-RECORD.md`](docs/DESIGN-RECORD.md) | Design decisions, checks and open items |
+| [`release/rev2`](release/rev2) | Ordering package: Gerber, BOM, placement |
+| [`docs/SPEC.md`](docs/SPEC.md) | Requirements and build options |
+| [`docs/DESIGN-RECORD.md`](docs/DESIGN-RECORD.md) | Decisions, calculations, checks, open items |
+| [`docs/images`](docs/images) | Renders |
 
-The EasyEDA Pro project is not stored in this repository.
+The EasyEDA Pro project `Solar Power Module CN3722 V2` is not stored here.
 
 ## License
 
