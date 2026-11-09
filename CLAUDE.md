@@ -1,7 +1,5 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project
 
 Solar MPPT charge controller, a 64 × 42 mm, 2-layer board around the CN3722. It is based on Malte Pöggel's design and must keep all of its options: chemistry, charge current, MPPT voltage, NTC modes, SMD or through-hole `C1`, and FOCV tracker compatibility.
