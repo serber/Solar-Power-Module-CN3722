@@ -96,7 +96,7 @@ With the board powered from a bench supply and no battery, set the supply to the
 Upload [`release/rev2/gerber-rev2.zip`](release/rev2) and send:
 
 ```text
-5PCS, 2 LAYERS, FR4, 1.6MM, OUTER 1OZ, Green Soldermask, White Legend, ENIG, TENTED VIAS, order number will be added
+5PCS, 2 LAYERS, FR4, 1.6MM, OUTER 1OZ, Green Soldermask, White Legend, Lead-free HASL, TENTED VIAS, order number will be added
 ```
 
 | Item | Reason |
